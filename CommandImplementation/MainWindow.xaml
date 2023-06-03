@@ -5,10 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommandImplementation"
         mc:Ignorable="d"
-        Title="{Binding Count}" Height="450" Width="800">
+        Title="{Binding Count}" Height="170" Width="325">
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
+    <Window.InputBindings>
+        <KeyBinding Modifiers="Ctrl" Key="R" Command="{Binding RedCommand}"/>
+        <KeyBinding Modifiers="Ctrl" Key="G" Command="{Binding GreenCommand}"/>
+        <KeyBinding Modifiers="Ctrl" Key="B" Command="{Binding BlueCommand}"/>
+    </Window.InputBindings>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Colors">
@@ -30,9 +35,9 @@
                 <RowDefinition Height="5"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            
+
             <Border Background="{Binding SelectedColor}" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0"/>
-            
+
             <Button Command="{Binding RedCommand}" Grid.Column="0" Grid.Row="2">Red</Button>
             <Button Command="{Binding GreenCommand}" Grid.Column="2" Grid.Row="2">Green</Button>
             <Button Command="{Binding BlueCommand}" Grid.Column="4" Grid.Row="2">Blue</Button>

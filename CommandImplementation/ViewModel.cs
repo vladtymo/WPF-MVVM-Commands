@@ -6,9 +6,9 @@ namespace CommandImplementation
 {
     internal sealed class ViewModel : INotifyPropertyChanged
     {
+        private readonly RelayCommand redCommand;
         private readonly RelayCommand blueCommand;
         private readonly RelayCommand greenCommand;
-        private readonly RelayCommand redCommand;
 
         private string selectedColor = "Black";
 
