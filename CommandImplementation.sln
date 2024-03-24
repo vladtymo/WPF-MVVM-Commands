@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandImplementation", "CommandImplementation\CommandImplementation.csproj", "{9AC9E8D6-4881-443A-80F7-C6B3E219F146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook_with_Commands", "PhoneBook_with_Commands\PhoneBook_with_Commands.csproj", "{3F242001-FE38-4E78-8BF9-1A80D4753ADB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{F064B5F7-29B8-437B-89FC-2F662CB404ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBookApp", "ContactBookApp\ContactBookApp.csproj", "{9EFC7B97-8B23-4F93-AFBC-B1B509F4B412}"
@@ -21,10 +19,6 @@ Global
 		{9AC9E8D6-4881-443A-80F7-C6B3E219F146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC9E8D6-4881-443A-80F7-C6B3E219F146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC9E8D6-4881-443A-80F7-C6B3E219F146}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F242001-FE38-4E78-8BF9-1A80D4753ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F242001-FE38-4E78-8BF9-1A80D4753ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F242001-FE38-4E78-8BF9-1A80D4753ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F242001-FE38-4E78-8BF9-1A80D4753ADB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F064B5F7-29B8-437B-89FC-2F662CB404ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F064B5F7-29B8-437B-89FC-2F662CB404ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F064B5F7-29B8-437B-89FC-2F662CB404ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
