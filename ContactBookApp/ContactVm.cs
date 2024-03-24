@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PhoneBook_with_Commands
 {
-    public class Contact : INotifyPropertyChanged
+    public class ContactVm : INotifyPropertyChanged
     {
         private string name;
         private string surname;
@@ -16,6 +17,18 @@ namespace PhoneBook_with_Commands
         private string phone;
         private bool isMale;
 
+        public ContactVm() { }
+        public ContactVm(Contact entity)
+        {
+            this.Id = entity.Id;
+            this.name = entity.Name;
+            this.phone = entity.Phone;
+            this.age = entity.Age;
+            this.surname = entity.Surname;
+            this.isMale = entity.IsMale;
+        }
+
+        public int Id { get; set; }
         public string Name
         {
             get { return name; }
@@ -100,7 +113,7 @@ namespace PhoneBook_with_Commands
         {
             // shallow copy (поверхневе копіювання) - копіюються лише 
             // значення value типів та посилання reference типів
-            Contact clone = (Contact)this.MemberwiseClone();
+            ContactVm clone = (ContactVm)this.MemberwiseClone();
 
             // deep copy (глибоке копіювання) - кожний reference тип
             // копіюється власним методом клонування
